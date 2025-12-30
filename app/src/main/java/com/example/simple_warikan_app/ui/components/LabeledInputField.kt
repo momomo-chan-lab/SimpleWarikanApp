@@ -40,6 +40,7 @@ fun LabeledInputField(
         Spacer(Modifier.padding(8.dp))
 
         OutlinedTextField(
+            modifier = Modifier.weight(1f),
             value = value,
             onValueChange = onValueChange,
             textStyle = TextStyle(textAlign = TextAlign.Right)
