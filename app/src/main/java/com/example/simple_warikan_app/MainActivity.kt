@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.example.simple_warikan_app.ui.components.LabeledInputField
+import com.example.simple_warikan_app.ui.WarikanContent
 import com.example.simple_warikan_app.ui.theme.SimpleWarikanAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,11 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SimpleWarikanAppTheme {
-                LabeledInputField(
-                    label = "金額",
-                    unit = "円",
-                    value = "10000",
-                )
+                WarikanContent()
             }
         }
     }
